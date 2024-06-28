@@ -1,6 +1,9 @@
-module tt_um_adder (input clk, reset, ena, 
-                    input a[3:0],
-                            output  z[4:0]);
+module tt_um_adder (input clk,
+                    input reset, 
+                    input ena, 
+                    input [3:0]a,
+                    output [4:0]z
+                   );
 
     
 
@@ -13,4 +16,6 @@ module tt_um_adder (input clk, reset, ena,
 
                             assign z[0] =  a[3]&a[2]&a[1]&[0]  ;
 
+
+ 
 endmodule
