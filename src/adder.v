@@ -1,14 +1,16 @@
-module tt_um_adder (input clk, reset, ena, a, b, c, d,
-     output v, w, x, y, z);
+module tt_um_adder (input clk, reset, ena, 
+                    input a[3:0}
+                            output  z[4:0]);
 
-    assign v =  ~a&~b&~c&~d ;
+    
 
-    assign w =  ~a&~b&~c&d | ~a&~b&c&~d | ~a&b&~c&~d | a&~b&~c&~d ;
+                            assign Z[4] =  a[3]&a[2]&~a[1]&[0] ;
 
-    assign x =  a&b&~c&~d | a&~b&c&~d | a&~b&~c&d | ~a&b&c&~d | ~a&b&~c&dv| ~a&~b&c&d ;
+                            assign Z[3] =   a[3]&~a[2]&a[1]&[0]  ;
 
-    assign y =  ~a&b&c&d | a&~b&c&d | a&b&~c&d | a&b&c&~d ;
+                            assign Z[2] =   a[3]&a[2]&a[1]|[0]  ;
+                            assign z[1] =  ~a[3]&a[2]&a[1]&[0] ;
 
-    assign z =  a&b&c&d ;
+                            assign z[0] =  a[3]&a[2]&a[1]&[0]  ;
 
 endmodule
