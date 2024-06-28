@@ -1,8 +1,14 @@
 module tt_um_adder (input clk,
                     input reset, 
                     input ena, 
-                    input [1:0]a, [3:2]b, [5:4]c, [7:6]d,
-                    output [1:0]x, [3:2]y, [5:4]z, [7:6]v
+                    input [1:0]a,
+                    input [3:2]b,
+                    input [5:4]c, 
+                    input[7:6]d,
+                    output [1:0]x, 
+                    output [3:2]y,
+                    output[5:4]z, 
+                    output [7:6]v
                    );
 
     
