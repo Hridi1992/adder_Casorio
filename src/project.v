@@ -32,8 +32,8 @@ module tt_um_example (
         .a(ui_in[5:4]),
         .a(ui_in[7:6]),
         .z(uo_out[7:6]),
-        .x(uo_out[5:4])
-        .y(uo_out[3:2])
+        .x(uo_out[5:4]),
+        .y(uo_out[3:2]),
         .v(uo_out[1:0])
     );
 
