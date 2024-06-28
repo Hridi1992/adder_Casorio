@@ -26,6 +26,7 @@ module tt_um_example (
     tt_um_adder top(
         .clk(clk),
         .reset(rst_n),
+        .ena(ena),
         .a(ui_in[7:0]),
         .z(uo_out[7:0])
     );
