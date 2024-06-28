@@ -1,5 +1,5 @@
 module tt_um_adder (input clk, reset, ena, 
-                    input a[3:0}
+                    input a[3:0],
                             output  z[4:0]);
 
     
