@@ -4,11 +4,11 @@ module tt_um_adder (input clk,
                     input [1:0]a,
                     input [3:2]b,
                     input [5:4]c, 
-                    input[7:6]d,
-                    output [1:0]x, 
+                    input [7:6]d,
+                    output [1:0]v, 
                     output [3:2]y,
-                    output[5:4]z, 
-                    output [7:6]v
+                    output [5:4]x, 
+                    output [7:6]z
                    );
 
     
